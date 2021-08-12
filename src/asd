@@ -1,0 +1,36 @@
+ <Particles
+        params={{
+          particles: {
+            number: {
+              value: 30,
+              density: {
+                enable: true,
+                value_area: 900,
+              }
+            },
+            shape: "circle",
+            stroke: {
+              width: 6,
+              color: "white"
+            }
+          }
+        }}
+      />
+        <Navbar />
+        <Switch>
+          <Route path="/header" exact>
+          < Header />
+          </Route>
+
+          <Route path="/about" exact>
+          < AboutPage />
+          </Route>
+
+          <Route path="/study" exact>
+          < StudiesPage />
+          </Route>
+
+          <Route path="/contact" exact>
+          < ContactPage />
+          </Route>
+        </Switch>
